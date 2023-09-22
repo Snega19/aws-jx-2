@@ -21,12 +21,12 @@ spec:
   - key: production
   ingress:
     domain: ""
-    externalDNS: true
+    externalDNS: false
     namespaceSubDomain: -jx.
     tls:
       email: ""
-      enabled: true
-      production: true
+      enabled: false
+      production: false
   repository: bucketrepo
   secretStorage: local
   vault: {}
