@@ -2,7 +2,7 @@ apiVersion: core.jenkins-x.io/v4beta1
 kind: Requirements
 spec:
   autoUpdate:
-    enabled: false
+    enabled: true
     schedule: ""
   cluster:
     chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
@@ -21,12 +21,12 @@ spec:
   - key: production
   ingress:
     domain: ""
-    externalDNS: false
+    externalDNS: true
     namespaceSubDomain: -jx.
     tls:
       email: ""
-      enabled: false
-      production: false
+      enabled: true
+      production: true
   repository: bucketrepo
   secretStorage: local
   vault: {}
